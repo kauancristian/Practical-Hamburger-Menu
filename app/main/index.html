@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/hamb-2.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>DevBurguer</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-image: url(./assets/img/bg.png);
+        }
+
+        @media screen and (min-width:768px) {
+            div{
+                margin: auto;
+                font-size: large;
+                margin-right: 20px;
+                width: 100%;
+            }
+
+            /* Sessão de Bebidas */
+            section{
+                transform: translate(-15px);
+            }
+
+            /* Imagens dos hamburgueres */
+            #im{
+                width: 90px;
+                height: 90px;
+            }
+
+            /*Botão do carrinho */
+            button{
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body class="bg-slate-200">
+
+    <header class="w-full h-[420px] bg-zinc-950 bg-header bg-center bg-cover flex flex-col justify-center items-center object-cover">
+        <!-- Início do Header -->
+        <div class="flex flex-col items-center">
+            <img class="rounded-full w-32 h-32 hover:scale-125 transition ease-in-out duration-500 drop-shadow-lg" src="./assets/img/hamb-1.png" alt="">
+
+            <p class="text-white font-medium text-2xl text-center mt-3">Dev Burguer</p>
+
+            <p class="text-white font-normal mt-1">Rua Dev 463.Maranguape - CE</p>
+
+            <span class="text-white bg-green-600 mt-4 rounded-md px-4 py-1 md:h-[38px] md:text-lg">Seg á Dom-18:00 ás 22:00</span>
+        </div>
+        <!-- Fim do Header -->
+    </header>
+
+    <p class="text-center mt-8 mb-9 text-lg md:text-[32px] md:mt-16 md:mb-24 font-light">Conheça nosso menu</p>
+
+   <!-- Início Menu de itens -->
+    <div id="menu" class="max-w-7xl">
+
+        <main class=" grid md:grid-cols-2 gap-6 md:gap-10 md:mx-auto md:max-w-[80%]">
+
+         
+            <!-- Primeiro item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-1.png" alt="Hambúrguer Smash"/>
+
+                <div>
+                    <p class="font-bold">Hambúrguer Smash</p>
+                    <p  class="text-sm md:text-[15px]">Saboroso blend que utiliza esmagar o burger contra a chapa ou frigideira com caramelização na carne.</p>
+        
+                
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$19,90</p>
+                        
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md "></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Segundo Item -->
+            <div class="flex gap-3 mt-2.5">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-2.png" alt="Hambúrguer Flash">
+
+                <div>
+                    <p class="font-bold">Hambúrguer Flash</p>
+                    <p class="text-sm md:text-[15px]">Hambúrguer artesanal, feito com ingredientes frescos e de qualidade, e com uma variedade de opções.</p>
+
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$32,90</p>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Terceiro Item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-3.png" alt="X Burguer">
+
+                <div>
+                    <p class="font-bold">X Burguer</p>
+                    <p class="text-sm md:text-[15px]">A combinação de carne suculenta, queijo derretido e pão macio, composto por pão, carne, queijo e outros ingredientes. </p>
+
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$25,90</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Quarto Item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150 mt-1.5" src="./assets/img/hamb-4.png" alt="Burguer Self">
+
+                <div>
+                    <p class="font-bold md:mt-2">Burguer Self</p>
+                    <p class="text-sm md:text-[15px]">Sanduíche de carne temperada e moldada em formato circular, servido entre duas metades de pão</p>
+
+                    <div class="flex items-center justify-between mt-6 md:mt-3">
+                        <p class="font-bold">R$22,99</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Quinto Item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-5.png" alt="Wolf Burguer">
+
+                <div>
+                    <p class="font-bold">Wolf Burguer</p>
+                    <p class="text-sm md:text-[15px]">É um sanduíche de alta gastronomia, feito com ingredientes de qualidade e um modo de preparo diferenciado.</p>
+
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$13,99</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sexto Item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-6.png" alt="">
+
+                <div>
+                    <p class="font-bold">Legacy Burguer</p>
+                    <p class="text-sm md:text-[15px]">Pão fofinho com gergelim, 2 hambúrgueres de carne 100% bovina grelhados no fogo, o novo molho cremoso sabor queijo cheddar </p>
+
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$37,90</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sétimo item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-150" src="./assets/img/hamb-7.png" alt="">
+
+                <div>
+                    <p class="font-bold">Double Cheddar Burguer</p>
+                    <p class="text-sm md:text-[15px]">Um hambúrguer de carne bovina, molho lácteo com queijo cheddar, cebola ao molho shoyu e pão escuro com gergelim.</p>
+
+                    <div class="flex items-center justify-between mt-2.5">
+                        <p class="font-bold">R$42.90</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Oitavo Item -->
+            <div class="flex gap-3">
+                <img id="im" class="w-28 h-28 rounded-md hover:-rotate-6 duration-200" src="./assets/img/hamb-8.png" alt="">
+
+                <div>
+                    <p class="font-bold">Light Burguer</p>
+                    <p class="text-sm md:text-[15px]">Mistura de vegetais hiperproteicos, como ervilha, soja e alguns condimentos naturais (cebola, alho e beterraba).</p>
+                    
+                    <div class="flex items-center justify-between mt-3.5">
+                        <p class="font-bold">17,90</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white py-1.5 px-5 bg-gray-900 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <!-- Bebidas -->
+        <p class="text-center font-light text-lg md:text-[32px] mt-14 md:mt-24 mb-14">Nossas bebidas</p>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 mb-16 md:max-w-[80%] mx-auto gap-5">
+
+            <div class="flex col-span-1 mb-5">
+                <img id="im" class="w-28 h-28 hover:-rotate-6 duration-150" src="./assets/img/refri-1.png" alt="">
+
+                <div>
+                    <p class="font-bold">Coca-Cola</p>
+                    <p class="text-sm md:text-[15px]">Refrigerante não alcoólico, feito de água gaseificada, açúcar, extrato de noz de cola e cafeína.</p>
+
+                    <div class="flex items-center justify-between">
+                        <p class="font-bold mt-3">R$5,99</p>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex">
+                <img class="w-28 h-28 hover:-rotate-6 duration-150 " src="./assets/img/refri-2.png" alt="">
+
+                <div>
+                    <p class="font-bold">Guaraná</p>
+                    <p class="text-sm md:text-[15px]">Bebida refrescante e saborosa. Possui 600ml de volume e é feita com guaraná natural, açúcar e água.</p>
+
+                    <div class="flex items-center justify-between mt-3">
+                        <p class="font-bold">R$4,00</p>
+
+                        <button>
+                            <i class="fa-solid fa-cart-shopping text-white bg-gray-900 py-1.5 px-5 rounded-md"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- Fim do Menu -->
+</body>
